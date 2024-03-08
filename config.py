@@ -1,1 +1,2 @@
-ECHO is on.
+name = "Angelina"
+print(name)
