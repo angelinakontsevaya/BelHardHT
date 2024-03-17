@@ -47,6 +47,9 @@ If the implementation is hard to explain, it's a bad idea.
 If the implementation is easy to explain, it may be a good idea.
 Namespaces are one honking great idea -- let's do more of those!"""
 
+lines = dzen_of_python.split("\n")
+num_lines = len(lines)
+print(num_lines)
 
 keywords = ["is", "and", "or"]
 keyword_counts = {keyword: dzen_of_python.count(keyword) for keyword in keywords}
