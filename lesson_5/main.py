@@ -32,19 +32,16 @@ rubles = int(input("Введите количество рублей: "))
 penny = int(input("Введите количество копеек: "))
 if rubles < 10:
     if rubles == 1:
-        rubles_str = "1 рубль"
+        rubles = "1 копейка"
     else:
-        rubles_str = str(rubles) + " рубля"
-    if penny == 1:
-        penny = "1 копейка"
-    else:
-        penny_str = str(penny) + " копейки"
+        rubles_str = str(rubles) + "рубля"
 
-    if rubles > 0 and penny > 0:
+    if penny == 1:
+        penny = "1 рубль"
+    else:
+        penny_str = str(penny) + "копейки"
+
+    if  rubles > 0 and penny > 0:
         print(rubles_str + ", " + penny_str)
-    elif rubles > 0:
-        print(rubles_str)
-    elif penny > 0:
-        print(penny_str)
 else:
-    print("Введите сумму до 10 рублей.")
+    print("Ввести количество рублей меньше 10")
