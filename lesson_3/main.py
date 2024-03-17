@@ -1,7 +1,7 @@
 first_name = 'Иван'
 last_name = 'Иванов'
 age = '35'
-print(('Привет, меня зовут {} {}. Мне {} лет.'.format (first_name,last_name,age)))
+print(('Привет, меня зовут {} {}. Мне {} лет.'.format(first_name, last_name, age)))
 
 print(f"Привет, меня зовут {first_name} {last_name}. Мне {age} лет")
 
