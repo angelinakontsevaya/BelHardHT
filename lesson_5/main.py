@@ -17,11 +17,9 @@ elif guest <= 20:
 # Если меньше 10, то вывести на экран второй символ строки.
 
 string = input("Введите строку: ")
-
 if len(string) >= 10:
     new_string = string + "!!!"
    print(new_string)
-
 if len(string) < 9:
     print (string[1])
 
@@ -32,13 +30,11 @@ if len(string) < 9:
 
 rubles = int(input("Введите количество рублей: "))
 penny = int(input("Введите количество копеек: "))
-
 if rubles < 10:
     if rubles == 1:
         rubles_str = "1 рубль"
     else:
         rubles_str = str(rubles) + " рубля"
-
     if penny == 1:
         penny = "1 копейка"
     else:
