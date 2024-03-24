@@ -9,6 +9,7 @@ class Dog:
         self.weight = weight
         self.name = name
         self.age = age
+
     def jump(self):
         print(f"{self.name} is jumping!")
     def run(self):
@@ -21,7 +22,7 @@ class Dog:
     Метод принимает на вход новое имя и меняет атрибут имени у объекта.
     Создать один объект класса. Вывести имя.
     Вызвать метод change_name. Вывести имя."""
-    def change_name(self,new_name):
+    def change_name(self, new_name):
         self.name = new_name
 
 my_dog = Dog(height=25, weight=5, name="Unik", age=1)
@@ -69,8 +70,7 @@ class Phone:
     def get_info(self):
         return(self.brand, self.model, self.issue_year)
 
-    def __info__(self):?????
-
+#   def __info__(self):????
 
 my_phone = Phone("Apple", "iPhone 14pro", 2023)
 
@@ -78,14 +78,3 @@ my_phone.receive_call("Alex")
 
 phone_info = my_phone.get_info()
 print(phone_info)
-
-
-
-
-
-
-
-
-
-
-
