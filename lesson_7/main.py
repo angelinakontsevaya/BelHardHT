@@ -70,7 +70,9 @@ class Phone:
     def get_info(self):
         return(self.brand, self.model, self.issue_year)
 
-#   def __info__(self):????
+    def __str__(self):
+        return f"Бренд:{self.brand}, Модель:{self.model}, Год выпуска:{self.issue_year}"
+
 
 my_phone = Phone("Apple", "iPhone 14pro", 2023)
 
@@ -78,3 +80,6 @@ my_phone.receive_call("Alex")
 
 phone_info = my_phone.get_info()
 print(phone_info)
+
+phone_str = my_phone.__str__()
+print(phone_str)
