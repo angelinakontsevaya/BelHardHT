@@ -13,10 +13,10 @@ def check_login(login: str):
         return False
 
 
-login_1 = "bjbjfnjvb"
+login_1 = "8889dnfjfvn"
 print(check_login(login_1))
 
-
+print("_______________________________________________________________________________________________________________")
 """Написать функцию check_phone, которая будет принимать строку и проверять,что она соответствует шаблону:
 1. код страны +375
 2. код оператора 29, 33, 44, 25 в скобках
@@ -27,10 +27,14 @@ print(check_login(login_1))
 7 две цифры"""
 
 def check_phone(phone_number):
-    pattern = r'^\+375\((29|33|44|25)\) \d{3}-\d{2}-\d{2}$'
+    pattern = r'^\+375 \((29|33|44|25)\) \d{3}-\d{2}-\d{2}$'
 
     if re.match(pattern, phone_number):
         return True
     else:
         return False
+
+phone = "+375 (29) 534-74-66"
+print(check_phone(phone))
+
 
