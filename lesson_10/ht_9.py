@@ -1,4 +1,3 @@
-
 """Написать pydantic модели:
 Для добавления объекта(все поля)
 Для получения всех объектов(только id и name)
@@ -6,10 +5,9 @@
 
 from typing import Optional, List
 from pydantic import BaseModel
-import json
 
 #Для добавления объекта(все поля)
-class User(BaseModel):
+class Object(BaseModel):
  id: int
  name: str
  age: int
@@ -17,12 +15,12 @@ class User(BaseModel):
  salary: float
 
 #Для получения всех объектов(только id и name)
-class UserInput(BaseModel):
+class Object_get_all(Object):
  id: int
  name: str
 
 #Для получения определенного объекта(все поля)
-class UserObj(User):
+class Object_get(Object):
  pass
 
 """Написать 3 метода(функции):
@@ -30,11 +28,14 @@ class UserObj(User):
 Получения всех объектов
 Получение определенного объекта"""
 
-#Добавление объекта в файл
+import json
 
-def add_user_to_file(user: UserInput):
- with open("data.json", "r") as file:
+#Добавление объекта в файл
+def read_data_from_file(file_path):
+ with open(file_path, "r") as file:
   data = json.load(file)
+  return data
+
 
 
 
