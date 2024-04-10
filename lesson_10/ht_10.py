@@ -16,7 +16,6 @@ class UserInput(BaseModel):
 class UserOutput(BaseModel):
     id: int
     name: str
-
 import json
 
 def add_user_to_file(user: UserInput):
