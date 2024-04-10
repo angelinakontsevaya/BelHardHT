@@ -19,7 +19,6 @@ cars_data = [
     {"Марка": "Kia", "Модель": "Optima", "Пробег": 26000, "Стоимость": 13000}
 ]
 collection.insert_many(cars_data)
-
 # Фильтр-запросы
 most_expensive_car = collection.find_one(sort=[("Стоимость", pymongo.DESCENDING)])
 cheapest_car = collection.find_one(sort=[("Стоимость", pymongo.ASCENDING)])
@@ -35,4 +34,4 @@ for car in sorted_by_mileage:
     print(car)
 print("\nВывести 3 авто с минимальными пробегами:")
 for car in min_mileage_cars:
-    print(car)
+    print(car)gig
