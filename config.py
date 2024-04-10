@@ -1,1 +1,1 @@
-print ("Angelina")
+print("Angelina")
