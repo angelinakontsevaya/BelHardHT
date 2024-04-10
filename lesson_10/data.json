@@ -1,0 +1,39 @@
+{
+ "id": 1,
+ "name": "Alice",
+ "age": 25,
+ "interests": ["reading", "hiking"],
+ "salary": 50000.0
+}
+
+{
+ "id": 2,
+ "name": "Bob",
+ "age": 30,
+ "interests": ["reading"],
+ "salary": 60000.0
+}
+
+{
+ "id": 3,
+ "name": "Charlie",
+ "age": 28,
+ "interests": ["painting"],
+ "salary": 55000.0
+}
+
+{
+ "id": 4,
+ "name": "David",
+ "age": 35,
+ "interests": ["cooking", "traveling"],
+ "salary": 70000.0
+}
+
+{
+ "id": 5,
+ "name": "Eve",
+ "age": 22,
+ "interests": ["photography", "dancing"],
+ "salary": 48000.0
+}
