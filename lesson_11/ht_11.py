@@ -4,7 +4,6 @@ import pymongo
 client = pymongo.MongoClient("mongodb://localhost:27017/")
 db = client["Cars"]
 collection = db["cars_collection"]
-
 # Добавление 10 машин
 cars_data = [
     {"Марка": "Audi", "Модель": "A4", "Пробег": 50000, "Стоимость": 25000},
